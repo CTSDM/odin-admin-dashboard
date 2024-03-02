@@ -140,3 +140,37 @@ html {
     justify-self: start;
 }
 
+.logo span {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.logo img {
+    height: 30px;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 20px;
+    padding: 20px;
+}
+
+.user-stuff {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+}
+
+.header img {
+    height: 20px;
+}
+
+.header input {
+    width: 100%;
+    border-radius: 20px;
+    border-style: none;
+    background-color: lightgrey;
+}
+
+    
