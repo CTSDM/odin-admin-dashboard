@@ -11,10 +11,9 @@ html {
 .container {
     display: grid;
     grid-template-columns: minmax(100px, 1fr) minmax(300px, 4fr);
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: auto auto;
     gap: 10px;
     background-color: lightgray;
-    min-height: 100vh;
     padding: 20px;
 }
 
@@ -26,9 +25,92 @@ html {
 .sidebar {
     grid-area: 1 / 1 / -1 / 2;
     background-color: skyblue;
+    display: grid;
+    grid-template-rows: auto auto auto 1fr;
+    gap: 30px;
+    font-size: 1.2rem;
+}
+
+.part1,
+.part2 {
+    display: grid;
+    gap: 10px;
 }
 
 .main-content {
-    grid-area: 2 / 2 / -1 / -1;
     background-color: skyblue;
+    display: grid;
+    grid-template: auto auto 1fr / 4fr 1fr;
+    grid-template-areas: 
+    "projects right-info"
+    "projects right-info"
+    "projects ..";
+    gap: 20px;
+}
+
+img {
+    height: 20px;
+}
+
+.projects {
+    grid-area: projects;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 10px;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    font-size: 1.5rem;
+}
+
+.right-info {
+    grid-area: right-info;
+    display: grid;
+    position: sticky;
+    top: 0;
+}
+
+.announcements {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    background: greenyellow;
+}
+
+.announcements-container {
+    display: grid;
+    align-content: space-evenly;
+}
+
+.announcements-container,
+.trending-container,
+.project {
+    background-color: white;
+    border-radius: 20px;
+    padding: 4px;
+    font-size: 1.2rem;
+}
+
+.trending {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    background: palegreen;
+}
+
+.trending-container {
+    display: grid;
+    gap: 10px;
+    align-content: space-evenly;
+}
+
+.project {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+}
+
+.project .icons {
+    justify-self: end;
 }
