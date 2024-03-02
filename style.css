@@ -10,7 +10,7 @@ html {
 
 .container {
     display: grid;
-    grid-template-columns: minmax(auto, 1fr) minmax(300px, 4fr);
+    grid-template-columns: minmax(auto, 1fr) minmax(600px, 4fr);
     grid-template-rows: auto auto;
     gap: 10px;
     background-color: lightgray;
@@ -167,7 +167,7 @@ html {
 }
 
 .top {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
 }
 
 .bottom {
@@ -232,6 +232,6 @@ html {
 }
 
 .project {
-    background: linear-gradient(to right, orange 5%, white 5% 100%);
-    /* The above line is eqivalent to `linear-gradient(to right, red 5%, white 0%` */
+    background: linear-gradient(to right, orange 15px, white 0);
+    /* The above line is eqivalent to `linear-gradient(to right, red 20px, white 0%` */
 }
