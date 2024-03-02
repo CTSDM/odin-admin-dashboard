@@ -22,14 +22,19 @@ html {
     background-color: skyblue;
 }
 
-.sidebar {
+.sidebar-container {
     grid-area: 1 / 1 / -1 / 2;
     background-color: skyblue;
+}
+
+.sidebar {
     display: grid;
     grid-template-rows: auto auto auto 1fr;
     gap: 30px;
     font-size: 1.2rem;
     padding: 20px;
+    position: sticky;
+    top: 0px;
 }
 
 .part1,
