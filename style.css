@@ -52,6 +52,7 @@ html {
     "projects right-info"
     "projects ..";
     gap: 20px;
+    padding: 20px;
 }
 
 .projects img {
@@ -86,13 +87,15 @@ html {
     grid-area: right-info;
     display: grid;
     position: sticky;
-    top: 0;
+    top: 20px;
+    gap: 30px;
 }
 
 .announcements {
     display: grid;
     grid-template-rows: auto 1fr;
     background: greenyellow;
+    align-content: start;
 }
 
 .announcements-container {
@@ -149,6 +152,9 @@ html {
     justify-self: start;
 }
 
+.trending .title,
+.projects .title,
+.announcements .title,
 .logo span {
     font-size: 2rem;
     font-weight: 700;
@@ -232,6 +238,6 @@ html {
 }
 
 .project {
-    background: linear-gradient(to right, orange 15px, white 0);
-    /* The above line is eqivalent to `linear-gradient(to right, red 20px, white 0%` */
+    background: linear-gradient(to right, orange 15px, white 15px 100%);
+    /* The above line is eqivalent to `linear-gradient(to right, red 15px, white 0%` */
 }
