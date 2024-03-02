@@ -48,8 +48,16 @@ html {
     gap: 20px;
 }
 
-img {
+.projects img {
     height: 20px;
+}
+
+.trending img {
+    height: 40px;
+}
+
+.sidebar img {
+    height: 25px;
 }
 
 .projects {
@@ -114,3 +122,21 @@ img {
 .project .icons {
     justify-self: end;
 }
+
+.trending-1,
+.trending-2,
+.trending-3,
+.trending-4 {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+}
+
+.profile-pic {
+    justify-self: end;
+}
+
+.box {
+    justify-self: start;
+}
+
