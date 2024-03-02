@@ -10,7 +10,7 @@ html {
 
 .container {
     display: grid;
-    grid-template-columns: minmax(100px, 1fr) minmax(300px, 4fr);
+    grid-template-columns: minmax(auto, 1fr) minmax(300px, 4fr);
     grid-template-rows: auto auto;
     gap: 10px;
     background-color: lightgray;
@@ -29,6 +29,7 @@ html {
     grid-template-rows: auto auto auto 1fr;
     gap: 30px;
     font-size: 1.2rem;
+    padding: 20px;
 }
 
 .part1,
@@ -56,8 +57,10 @@ html {
     height: 40px;
 }
 
-.sidebar img {
-    height: 25px;
+.part1 img,
+.part2 img{
+    width: 30px;
+    margin-left: 20px;
 }
 
 .projects {
@@ -145,15 +148,24 @@ html {
     font-weight: 700;
 }
 
-.logo img {
-    height: 30px;
+.logo > img {
+    width: 60px;
+    margin-left: 5px;
 }
 
-.header {
+.top,
+.bottom {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
     gap: 20px;
     padding: 20px;
+}
+
+.top {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+}
+
+.bottom {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
 }
 
 .user-stuff {
@@ -168,14 +180,47 @@ html {
     height: 20px;
 }
 
+.bottom img {
+    height: 40px;
+}
+
 .header input {
     border-radius: 20px;
     border-style: none;
     background-color: red;
-    width: clamp(95%, 45vw, 80vw);
+    width: clamp(85%, 45vw, 80vw);
 }
 
 .search {
     display: grid;
     grid-template-columns: auto 1fr;
+}
+
+.user-greet {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: start;
+    gap: 20px;
+}
+
+.user-actions {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: end;
+    align-content: center;
+    gap: 20px;
+}
+
+.logo,
+.dash {
+    display: grid;
+    grid-auto-flow: column;
+    align-content: center;
+    justify-content: start;
+    gap: 30px;
+    font-size: 2rem;
+}
+
+.logo {
+    gap: 15px;
 }
