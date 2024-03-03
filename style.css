@@ -92,7 +92,7 @@ body {
     grid-area: right-info;
     display: grid;
     position: sticky;
-    top: 20px;
+    top: 30px;
     gap: 30px;
 }
 
@@ -243,7 +243,7 @@ body {
 .dash {
     display: grid;
     grid-auto-flow: column;
-    align-content: center;
+    align-items: center;
     justify-content: start;
     gap: 30px;
     font-size: 2rem;
